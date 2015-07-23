@@ -15,7 +15,7 @@ WYSIWYG (What you see is what you get) is an web based editor to generate button
   <br/>
   <br/>
   I.Used module pattern 
-  II.Tried to refactoir code for better readability
+  II.Tried to refactoor code for better readability
   <br/>
   <br/>
   languages used: Javascript,HTML5,CSS3
