@@ -1,0 +1,135 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Clicker</title>
+    <link rel="stylesheet" type="text/css" href="wysiwyg.css">
+    <style type="text/css">
+    </style>
+</head>
+<body>
+
+    <div id="div-result" >
+        <div id="div-display">
+            <button id="my-button">
+                <btntxt></btntxt>
+                <div id="drag-anchor"></div>
+            </button>
+        </div>
+        <div id="div-save">
+            <button id="save-css">Save</button>
+        </div>
+        <div id="div-css">
+            <strong>CSS</strong><br/>            
+            <code id ="css-code"></code>
+        </div>
+    </div>
+    <div id="div-input" >
+        <fieldset>
+            <legend>Size</legend>
+            <label for="width">Width</label>
+            <input type="number" min="0" max="500" id="width"/>
+            <label for="height">Height</label>
+            <input type="number" min="0" max="500" id="height" />
+        </fieldset>
+        <fieldset>
+            <legend>Text</legend>
+            <label for="text"></label>
+            <input type="text" id="text"/>
+            <label for="color">Color</label>
+            <input type="color" id="color" />
+        </fieldset>
+        <fieldset>
+            <legend>Font</legend>
+            <label for="fontFamily">Family</label>
+            <select id="fontFamily">
+                <option value="Arial">Arial</option>
+                <option value="Times">Times</option>
+                <option value="Courier">Courier</option>
+            </select>
+            <label for="fontSize">Size</label>
+            <input type="number" min="0" id="fontSize"/>
+            <label for="fontWeight">Font-Weight</label>
+            <select id="fontWeight">
+                <option value="bold">bold</option>
+                <option value="normal">normal</option>
+            </select>
+        </fieldset>
+        <fieldset>
+            <legend>Background Gradient</legend>
+            <label for="backgroundTop">Top</label>
+            <input type="color" id="backgroundTop"/>
+            <label for="backgroundBottom">Bottom</label>
+            <input type="color" id="backgroundBottom" />
+        </fieldset>
+        <fieldset>
+            <legend>Padding</legend>
+            <label for="paddingTop">Top</label>
+            <input type="number" min="0" max="100" id="paddingTop" />
+            <label for="paddingRight">Right</label>
+            <input type="number" min="0" max="100" id="paddingRight" />
+            <label for="paddingBottom">Bottom</label>
+            <input type="number" min="0" max="100" id="paddingBottom" />
+            <label for="paddingLeft">Left</label>
+            <input type="number" min="0" max="100" id="paddingLeft"/>
+        </fieldset>
+        <fieldset>
+            <legend>Border</legend>
+            <label for="border">Width</label>
+            <input type="number" min="0" max="10" id="border" />
+            <label for="borderTop">Top</label>
+            <input type="color" id="borderTop" />
+            <label for="borderRight">Right</label>
+            <input type="color" id="borderRight"/>
+            <label for="borderBottom">Bottom</label>
+            <input type="color" id="borderBottom"/>
+            <label for="borderLeft">Left</label>
+            <input type="color" id="borderLeft"/>
+            <label for="borderRadius">Radius</label>
+            <input type="number" min="0" max="500" id="borderRadius" />
+        </fieldset>
+        <fieldset>
+            <legend>Hover</legend>
+            <label for="hoverBackground">Background</label>
+            <input type="color" id="hoverBackground" />
+            <label for="hoverColor">Color</label>
+            <input type="color" id="hoverColor" />
+        </fieldset>
+        <fieldset>
+            <legend>Active</legend>
+            <label for="activeBackground">Background</label>
+            <input type="color" id="activeBackground" />
+            <label for="activeColor">Color</label>
+            <input type="color" id="activeColor" />
+        </fieldset>                
+    </div>
+    <div id="div-history">
+        <h3>History</h3>
+    </div>
+    <div>
+        <a href="#openModal" id="modal">modal</a>
+        <div id="openModal" class="modalDialog">
+            <div>
+                <a href="#close" title="Close" class="close">X</a>
+                <h3>CSS</h3>
+                <code id="dialogCssCode"></code>
+
+            </div>
+        </div>
+    </div>
+    <!--script files-->
+    <!--<script type="text/javascript" src="wysiwyg.js"></script>-->
+    <script type="text/javascript" src="globals.js"></script>
+    <script type="text/javascript" src="Dom.js"></script>
+    <script type="text/javascript" src="Cookie.js"></script>
+    <script type="text/javascript" src="Data.js"></script>
+    <script type="text/javascript" src="Utilities.js"></script>
+    <script type="text/javascript" src="Main.js"></script>
+    <script type="text/javascript" src="Resize.js"></script>
+    <script type="text/javascript" src="Callbacks.js"></script>
+    <script type="text/javascript" src="EventHandlers.js"></script>
+    
+    
+
+</body>
+</html>
