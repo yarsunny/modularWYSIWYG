@@ -14,8 +14,9 @@ WYSIWYG (What you see is what you get) is an web based editor to generate button
   5.Create a button ex: <button id="my-button1/2/3...">button text</button> and just copy the css to get the same button. <br/>
   <br/>
   <br/>
-  I.Used module pattern 
-  II.Tried to refactoor code for better readability
+  I.Used module pattern
+  <br/> 
+  II.Tried to refactor code for better readability
   <br/>
   <br/>
   languages used: Javascript,HTML5,CSS3
